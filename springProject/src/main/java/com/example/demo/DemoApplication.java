@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 //(exclude = {DataSourceAutoConfiguration.class})	// DB를 사용하지 않겠다
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})	// DB를 사용하지 않겠다
+@SpringBootApplication
 @RestController	// 해당 클래스는 REST API를 처리하는 컨트롤러로 등록된다.
 public class DemoApplication {
 	public static void main(String[] args) {

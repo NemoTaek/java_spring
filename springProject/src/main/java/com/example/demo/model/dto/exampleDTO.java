@@ -1,10 +1,21 @@
-package com.example.demo;
+package com.example.demo.model.dto;
 
-public class SearchVO {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+// 데이터를 주고받을 때 사용하는 객체인 DTO 파일
+public class exampleDTO {
+    private int idx;
     private String username;
     private String email;
     private int age;
 
+    public int getIdx() { return idx; }
+    public void setIdx(int idx) {
+        this.idx = idx;
+    }
     public String getUsername() {
         return username;
     }
